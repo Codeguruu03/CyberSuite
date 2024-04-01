@@ -1,7 +1,8 @@
 1. stegano
+7. colorama
+ 
 2. python-nmap
 3. itertools
 4. argparse
 5. pywifi
 6. requests
-7. colorama 
