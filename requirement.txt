@@ -1,5 +1,6 @@
 1. stegano
 7. colorama
+8. prettytable
  
 2. python-nmap
 3. itertools

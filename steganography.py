@@ -30,7 +30,7 @@ def extract_text_from_image(image_path):
 def main():
     while True:
         # Print the ASCII art text using pyfiglet
-        for i in fig.figlet_format('                    Steganography    ', font='big', width=200).split('\n\n'):
+        for i in fig.figlet_format('                    Steganografy    ', font='big', width=200).split('\n\n'):
             print(Fore.LIGHTMAGENTA_EX + i.center(120) + Fore.RESET)
 
         # Print some information about steganography
