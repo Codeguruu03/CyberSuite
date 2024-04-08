@@ -1,5 +1,6 @@
-from PyPDF2 import PdfReader
+
 import itertools
+from PyPDF2 import PdfReader
 
 def crack_pdf_password(pdf_file, max_length=8, charset='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'):
     pdf = PdfReader(pdf_file)
