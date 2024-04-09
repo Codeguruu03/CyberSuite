@@ -1,6 +1,6 @@
 from tabulate import tabulate
+
 import pywifi
-from pywifi import const
 
 wifi = pywifi.PyWiFi()
 iface = wifi.interfaces()[0]

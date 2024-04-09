@@ -1,3 +1,4 @@
+
 import hashlib
 
 def crack_password(hash_to_crack, dictionary):

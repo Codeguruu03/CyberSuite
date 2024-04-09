@@ -1,0 +1,16 @@
+
+# ───────────────────────────────
+#   APPLICATION DEPENDENCIES
+# ───────────────────────────────
+
+pywifi
+stegano
+requests
+argparse
+tabulate
+colorama
+pyfiglet
+prettytable
+python-nmap
+
+# ───────────────────────────────

@@ -1,11 +1,12 @@
-from tabulate import tabulate
+
 import os
 import math
-import pyfiglet as fig
-from colorama import Fore
 import random
 import string
-
+import pyfiglet as fig
+from colorama import Fore
+from tabulate import tabulate
+ 
 def calculate_password_strength(password):
     length = len(password)
     uppercase_chars = sum(1 for char in password if char.isupper())
