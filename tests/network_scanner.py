@@ -1,3 +1,4 @@
+
 import nmap
 
 # Create a new instance of the PortScanner class
