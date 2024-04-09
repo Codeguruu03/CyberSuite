@@ -85,7 +85,7 @@ def main():
                 print(Fore.LIGHTMAGENTA_EX + i.center(120) + Fore.RESET)
 
         
-        print(Fore.GREEN + "The Common User Password Generator (CUPG) is a versatile tool designed to enhance security by creating strong and unique passwords for everyday use. With its intuitive interface and customizable options, CUPG empowers users to fortify their online accounts against unauthorized access, ensuring peace of mind in the digital realm" + Fore.RESET)
+        print(Fore.GREEN + "GuardGenie is a password generation tool designed to enhance security by creating strong and unique passwords. It utilizes user-provided details like names, birthdates, and keywords to generate passwords with varying degrees of strength, ensuring robust protection for online accounts." + Fore.RESET)
 
         print(Fore.LIGHTGREEN_EX + "You can skip any question by pressing Enter." + Fore.RESET)
         print("")

@@ -18,6 +18,7 @@ paths = [
     "css",
     "js",
     "backup",
+    "webpages",
     # Add more paths as needed
 ]
 
