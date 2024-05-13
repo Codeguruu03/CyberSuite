@@ -21,15 +21,30 @@ def hash_file(file_path, hash_type):
     try:
         with open(file_path, 'rb') as file:
             data = file.read()
+            print(Fore.LIGHTCYAN_EX + "Hashing The file ......")
+
     except FileNotFoundError:
         print("File not found.")
         return
-    hash_value = generate_hash(data, hash_type)
+    
+    if hash_type == 1:
+        hasher = hashlib.md5()
+    elif hash_type == 2:
+        hasher = hashlib.sha1()
+    elif hash_type == 3:
+        hasher = hashlib.sha256()
+    else:
+        raise ValueError("Invalid hash type")
+
+    hasher.update(data)
+    hash_value = hasher.hexdigest()
+
     file_name, file_extension = os.path.splitext(file_path)
     hashed_file_path = f"{file_name}_hash{file_extension}"
 
     with open(hashed_file_path, 'w') as hashed_file:
         hashed_file.write(hash_value)
+    
 
     return hashed_file_path
 
@@ -74,7 +89,7 @@ def main():
 
         hashed_file_path = hash_file(file_path, int(hash_type))
         if hashed_file_path:
-            print(f"Hashed file saved successfully: {hashed_file_path}")
+            print(Fore.LIGHTCYAN_EX + f"Hashed file saved successfully: {hashed_file_path}" + Fore.RESET )
 
     else:
         print("Invalid option.")
