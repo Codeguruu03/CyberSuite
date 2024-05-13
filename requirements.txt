@@ -10,7 +10,8 @@ argparse
 tabulate
 colorama
 pyfiglet
-prettytable
 python-nmap
+hashlib
+
 
 # ───────────────────────────────
