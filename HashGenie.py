@@ -17,6 +17,22 @@ def generate_hash(data, hash_type):
     hasher.update(data.encode('utf-8'))
     return hasher.hexdigest()
 
+def hash_file(file_path, hash_type):
+    try:
+        with open(file_path, 'rb') as file:
+            data = file.read()
+    except FileNotFoundError:
+        print("File not found.")
+        return
+    hash_value = generate_hash(data, hash_type)
+    file_name, file_extension = os.path.splitext(file_path)
+    hashed_file_path = f"{file_name}_hash{file_extension}"
+
+    with open(hashed_file_path, 'w') as hashed_file:
+        hashed_file.write(hash_value)
+
+    return hashed_file_path
+
 
 def main():
     for i in fig.figlet_format('                    HashGenie    ', font='big', width=200).split('\n\n'):
@@ -45,7 +61,21 @@ def main():
         print(Fore.LIGHTGREEN_EX + f"Hash value: {hash_value}" + Fore.RESET)
 
     elif option == '2':
-        print("File hashing functionality has been removed.")
+        file_path = input("Enter the path to the file: ")
+        print(Fore.LIGHTYELLOW_EX + "Choose a hash algorithm:")
+        print("1. MD5")
+        print("2. SHA-1")
+        print("3. SHA-256")
+        hash_type = input("Enter your choice (1/2/3): "+ Fore.RESET).strip()
+
+        if hash_type not in {'1', '2', '3'}:
+            print("Invalid hash algorithm choice.")
+            return
+
+        hashed_file_path = hash_file(file_path, int(hash_type))
+        if hashed_file_path:
+            print(f"Hashed file saved successfully: {hashed_file_path}")
+
     else:
         print("Invalid option.")
         return
@@ -59,7 +89,8 @@ def main():
                 os.system('python main.py')
                 return
             else:
-                break
+                os.system('cls' if os.name == 'nt' else 'clear')
+                main()
         else:
             print(Fore.RED + "Invalid choice. Please enter 'y' or 'n'." + Fore.RESET)
 
