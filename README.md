@@ -1,6 +1,5 @@
 # Cyber Suite
 
-![Cyber Suite Logo](https://yourdomain.com/path/to/logo.png)
 
 Cyber Suite is a comprehensive Python application designed to provide users with a suite of cybersecurity tools and functionalities. Developed by Naman Goyal, Cyber Suite offers a user-friendly interface for performing security testing, network analysis, data encryption, and more.
 
