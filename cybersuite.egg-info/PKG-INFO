@@ -1,3 +1,23 @@
+Metadata-Version: 2.2
+Name: cybersuite
+Version: 1.0.0
+Summary: A comprehensive Python-based cybersecurity toolkit
+Home-page: https://github.com/Codeguruu03/CyberSuite
+Author: Naman Goyal
+Author-email: Naman Goyal <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Codeguruu03/CyberSuite
+Project-URL: Documentation, https://github.com/Codeguruu03/CyberSuite#readme
+Project-URL: Repository, https://github.com/Codeguruu03/CyberSuite
+Project-URL: Bug Tracker, https://github.com/Codeguruu03/CyberSuite/issues
+Keywords: cybersecurity,security,penetration-testing,hacking
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
 <p align="center">
   <h1 align="center">🛡️ CyberSuite</h1>
   <p align="center">
