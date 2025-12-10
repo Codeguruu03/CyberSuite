@@ -6,12 +6,10 @@
 pywifi
 stegano
 requests
-argparse
 tabulate
 colorama
 pyfiglet
 python-nmap
-hashlib
 
 
 # ───────────────────────────────
